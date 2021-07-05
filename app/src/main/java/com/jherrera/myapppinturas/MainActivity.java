@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Declaracion del adaptador para la visualizacion de la informacion de la lista
         //Llenado de la lista
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, cate);
-        lista.setAdapter(adapter);
+        AdtaptadorListaP adtaptadorListaP = new AdtaptadorListaP(this,R.layout.lista_personalizada,cate);
+        lista.setAdapter(adtaptadorListaP);
 
         //Metodo para poder activar la funcion de presionar los componenetes de la lista
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
